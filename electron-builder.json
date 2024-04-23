@@ -1,0 +1,19 @@
+{
+  "appId": "com.example.mytime2cloud",
+  "extraFiles": ["public"],
+  "productName": "Encrypter",
+  "directories": {
+    "output": "bin"
+  },
+  "win": {
+    "target": "nsis",
+    "artifactName": "${productName}-Setup-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true,
+    "license": "license.txt",
+    "createDesktopShortcut": true
+  }
+}
